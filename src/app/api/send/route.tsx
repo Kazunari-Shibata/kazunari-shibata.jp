@@ -33,7 +33,8 @@ export async function POST(request: NextRequest) {
 
         const { data, error } = await resend.emails.send({
             from: config.from,
-            to: ['k11.shibata@gmail.com'],
+            to: email,
+            bcc: ['admin@kazunari-shibata.jp'],
             subject: config.subject,
             react: config.template({
                 first_name: first_name,
