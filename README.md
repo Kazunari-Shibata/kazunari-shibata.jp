@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Install Packages
 ```bash
+npm install @vercel/analytics,
+npm install @vercel/speed-insights,
 npm install @next/third-parties@latest next@latest,
 npm install resend,
 npm install sass,

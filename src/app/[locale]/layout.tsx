@@ -3,6 +3,8 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import { Roboto_Condensed, Noto_Sans_JP } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "@/app/styles/Globals.scss";
 
 const roboto_c = Roboto_Condensed({
@@ -47,6 +49,8 @@ export default async function LocaleLayout({
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
+                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
