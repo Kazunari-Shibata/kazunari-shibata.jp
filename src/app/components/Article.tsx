@@ -25,6 +25,7 @@ export function Article(data: any) {
                 <Link href={ data.url } target="_blank">
                     <span>{t('See more')}</span>
                 </Link>
+                <div className={styles.gradation}></div>
             </div>
         </article>
     );

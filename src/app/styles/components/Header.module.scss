@@ -65,7 +65,7 @@
         overflow: hidden;
 
         .wrapper {
-            min-width: 230px;
+            min-width: 240px;
             background: $secondary_background_color;
             position: absolute;
             top: 50%;
@@ -101,10 +101,10 @@
         }
 
         .body {
-            padding: 20px 15px;
+            padding: 25px 15px;
 
             a {
-                padding: 10px 35px;
+                padding: 10px 40px;
                 margin-bottom: 10px;
                 border-radius: $global_border_radius;
                 background: $primary_background_color;
@@ -136,8 +136,8 @@
                     position: absolute;
                     left: 15px;
                     top: 50%;
-                    width: 7px;
-                    height: 7px;
+                    width: 10px;
+                    height: 10px;
                     background: #0070f3;
                     border-radius: 25px;
                     transform: translateY(-50%);

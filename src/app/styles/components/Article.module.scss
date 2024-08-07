@@ -15,6 +15,8 @@
 
     .button{
         text-align: center;
+        position: relative;
+        
         a {
             appearance: none;
             background: $secondary_background_color;
@@ -28,8 +30,9 @@
             outline: none;
             overflow: hidden;
             padding: $button_padding;
-            position:relative;
+            position: relative;
             margin: 0 auto;
+            z-index: 5;
 
             &::before{
                 content: "";
@@ -45,6 +48,28 @@
                 -webkit-mask-composite: destination-out;
                 mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
                 mask-composite: exclude;
+            }
+        }
+
+        .gradation {
+            aspect-ratio: 1 / 1;
+            background: linear-gradient(-45deg, red, blue);
+            border-radius: 50%;
+            filter: blur(20px);
+            position: relative;
+            width: 250px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: .2;
+
+            &::after {
+                background: radial-gradient(rgb(21 21 21 / 0%), rgb(21 21 21));
+                content: '';
+                inset: 0;
+                position: absolute;
             }
         }
     }
