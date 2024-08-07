@@ -39,7 +39,7 @@ export default async function LocaleLayout({
                 <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             </head>
-            <body className={`${roboto_c.className} ${noto_jp.className}`}>
+            <body className={`${roboto_c.variable} ${noto_jp.variable}`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
