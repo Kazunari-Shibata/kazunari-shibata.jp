@@ -8,10 +8,6 @@
     padding: 0;
 }
 
-html {
-    background: $primary_background_color;
-}
-
 body {
     background: $primary_background_color;
     color: $text_color_dark;
@@ -21,13 +17,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-}
-
-html[lang="ja"] {
-    body {
-        font-size: 90%;
-        line-height: 1.7;
-    }
 }
 
 img {
@@ -54,5 +43,12 @@ main {
 @media (min-width: $inner_width) {
     body {
         background: $secondary_background_color;
+    }
+}
+
+html[lang="ja"] {
+    body {
+        font-size: 90%;
+        line-height: 1.7;
     }
 }
