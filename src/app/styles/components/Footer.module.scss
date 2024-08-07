@@ -77,7 +77,8 @@
         transform: translateY(-50%);
         // transform: translate(-50%,-50%);
         z-index: 1;
-        opacity: .2;
+        opacity: .3;
+
 
         &::after {
             background: radial-gradient(rgba(37, 37, 37 , 0%), rgb(37, 37, 37));
