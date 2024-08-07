@@ -53,11 +53,11 @@
 
         .gradation {
             aspect-ratio: 1 / 1;
-            background: linear-gradient(-45deg, red, blue);
+            background: linear-gradient(45deg, rgba(0, 153, 247, 1), rgba(241, 23, 18, 1));
             border-radius: 50%;
-            filter: blur(20px);
+            filter: blur(25px);
             position: relative;
-            width: 250px;
+            width: 275px;
             height: 100px;
             position: absolute;
             left: 50%;

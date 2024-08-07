@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 
     h1 {
@@ -24,35 +24,38 @@
     .button {
         align-items: center;
         appearance: none;
-        background: $secondary_background_color;
+        // background: $secondary_background_color;
         border: 0;
         color: $text_color_dark;
         cursor: pointer;
         display: flex;
-        font-size: 17px;
-        height: 47px;
+        width: 50px;
+        height: 50px;
         justify-content: center;
         outline: none;
         overflow: hidden;
         position:relative;
-        width: 47px;
         border-radius: $global_border_radius;
-        
-        &::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: $global_border_radius;
-            border: 1px solid transparent;
-            background: $button_gradation;
-            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-            -webkit-mask-composite: destination-out;
-            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-            mask-composite: exclude;
+
+        span {
+            font-size: 33px;
         }
+        
+        // &::before{
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     border-radius: $global_border_radius;
+        //     border: 1px solid transparent;
+        //     background: $button_gradation;
+        //     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+        //     -webkit-mask-composite: destination-out;
+        //     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+        //     mask-composite: exclude;
+        // }
     }
     
     .switcher {
