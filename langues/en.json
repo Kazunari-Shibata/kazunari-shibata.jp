@@ -5,16 +5,16 @@
     },
     "Works": {
         "GASHAPON_OFFICIAL_SITE": {
-            "title": "GASHAPON OFFICIAL SITE",
-            "description": "We developed a feature that allows you to easily find out which stores sell the Gashapon you want and how much stock is left from the map on our website."
+            "title": "GASHAPON<span>&reg;</span> OFFICIAL SITE",
+            "description": "Responsible for web production of Bandai's capsule toy \"Gashapon<span>&reg;</span>\" official information site, \"Gashapon<span>&reg;</span> Official Site.\" Implemented a feature that combines sales data sent from Gashapon<span>&reg;</span> machines with users' location information, allowing users to easily search for where they can buy their desired products on a map, thereby enhancing the site's performance as an information resource. Additionally, by linking sales data with the external official online shop \"Gashapon<span>&reg;</span> Online\" in almost real-time, streamlined the process for users to make immediate purchases once they find the products they want. As a result, the site was able to drive approximately 13% of the total sales of the online shop."
         },
         "GASHAPON_ONLINE": {
-            "title": "GASHAPON ONLINE",
-            "description": "&quot;Gashapon Online&quot; is a service that allows you to purchase Gashapon products anytime, 24/7, from your PC or smartphone. You can turn the Gashapon machine and open the capsule to see what you get on the spot. You can also enjoy exclusive online lottery screens and sound effects."
+            "title": "GASHAPON<span>&reg;</span> ONLINE",
+            "description": "Responsible for web direction of the official online shop for Gashapon<span>&reg;</span>, \"Gashapon<span>&reg;</span> Online,\" operated by Bandai Namco Amusement Inc. \"Gashapon<span>&reg;</span> Online\" is a service that allows users to purchase Gashapon<span>&reg;</span> online 24/7 from anywhere using a computer or smartphone, with the products delivered to their specified address at a later date. Users can spin a virtual Gashapon<span>&reg;</span> machine on the screen to receive a capsule, which they can then open to see what they've won instantly. One of the features of the online experience includes special lottery screens and sound effects unique to the online format."
         },
         "McDonalds_Tray_Mat": {
             "title": "McDonald's Tray Mat",
-            "description": "To address the pressing social issue of the \"JK business,\" the Aichi Prefectural Police are taking the lead nationwide with the slogan \"No! JK Business.\" To raise awareness about crime prevention, this initiative was realized through the cooperation of McDonald's Japan, which is actively involved in community contribution activities, and Nagoya Mode Gakuen and HAL Nagoya."
+            "description": "The \"JK Business,\" a social issue in Japan, refers to employing high school girls in ways that appeal to customers' sexual curiosity, violating regulations such as the Entertainment Law and Juvenile Protection and Development Ordinances. To raise awareness about crime prevention, a competition for tray mats was held by the Nakamura Police Station of Aichi Prefecture and Japan McDonald's, which is active in community contributions. I won the grand prize in this competition. The tray mats were used in all McDonald's locations across the Tokai region, significantly contributing to the eradication of the JK Business, and I received a letter of appreciation from the Aichi Prefectural Police."
         }
     },
     "Article": {
@@ -32,5 +32,8 @@
         "Submit": "Submit",
         "Submitting": "Submitting...",
         "lang": "en"
+    },
+    "Footer": {
+        "gashapon_note": "\"Gashapon<span>&reg;</span>\" is a registered trademark of Bandai Co., Ltd."
     }
 }

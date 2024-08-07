@@ -3,18 +3,18 @@ import { EmailTemplate as EmailTemplate_en } from '@/app/components/Email_en';
 import { EmailTemplate as EmailTemplate_jp } from '@/app/components/Email_jp';
 import { Resend } from 'resend';
 import * as React from 'react';
+import DOMPurify from 'isomorphic-dompurify';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
     try {
         const formData = await request.formData();
-        const first_name = formData.get("first_name") as string;
-        const last_name = formData.get("last_name") as string;
-        const email = formData.get("email") as string;
-        const message = (formData.get("message") as string).replace(/\r\n/g, '\n');
-
-        const lang = formData.get("lang") as string;
+        const first_name = DOMPurify.sanitize(formData.get("first_name") as string);
+        const last_name = DOMPurify.sanitize(formData.get("last_name") as string);
+        const email = DOMPurify.sanitize(formData.get("email") as string);
+        const message = DOMPurify.sanitize(formData.get("message") as string).replace(/\r\n/g, '\n');
+        const lang = DOMPurify.sanitize(formData.get("lang") as string);
 
         const emailConfig = {
             ja: {

@@ -62,11 +62,17 @@
             font-size: 160%;
             margin: 0 0 $gloval_margin_bottom;
             font-weight: bold;
+            span {
+                font-size: 13px;
+            }
         }
 
         p {
             margin-bottom: ($gloval_margin_bottom * 2);
             font-size: 100%;
+            span {
+                font-size: 11px;
+            }
         }
     }
 }

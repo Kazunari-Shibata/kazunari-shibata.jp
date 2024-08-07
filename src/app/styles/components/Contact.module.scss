@@ -2,7 +2,7 @@
 
 .container {
     background: $secondary_background_color;
-    border-radius: 10px;
+    border-radius: $global_border_radius * 2;
     border: 1px solid $border_color_dark;
     margin: 50px auto;
     max-width: 100%;
