@@ -63,6 +63,7 @@ export function Footer() {
                 <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(t.raw('gashapon_note'))}} />
                 <p>Made in Japan 🇯🇵</p>
             </div>
+            <div className={styles.gradation}></div>
         </footer>
     );
 }

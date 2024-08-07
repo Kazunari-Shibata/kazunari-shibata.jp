@@ -20,6 +20,7 @@ export function Article(data: any) {
             <div className={ styles.texts }>
                 <h3 dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.title)}} />
                 <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.description)}} />
+                <div className={styles.gradation}></div>
             </div>
             <div className={styles.button}>
                 <Link href={ data.url } target="_blank">

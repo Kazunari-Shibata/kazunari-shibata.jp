@@ -1,10 +1,11 @@
 import { Article } from "@/app/components/Article";
 import { useTranslations } from 'next-intl';
+import styles from "@/app/styles/components/Works.module.scss";
 
 export function Works() {
     const t = useTranslations('Works');
     return (
-        <section id="section_works" className="mt-28">
+        <section id="section_works" className={styles.container}>
             <Article 
                 title={t.raw('GASHAPON_OFFICIAL_SITE.title')}
                 // description={`Kazunari Shibata worked on the production of BANDAI&apos;s capsule toy information site, &quot;GASHAPON OFFICIAL SITE.&quot;<br /><br />We developed a feature that allows you to easily find out which stores sell the Gashapon you want and how much stock is left from the map on our website.`}

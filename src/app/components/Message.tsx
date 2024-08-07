@@ -1,5 +1,5 @@
-import styles from "@/app/styles/components/Message.module.scss";
 import { useEffect, useState } from 'react';
+import styles from "@/app/styles/components/Message.module.scss";
 
 interface MessageProps {
     status: string;

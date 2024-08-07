@@ -36,26 +36,10 @@
         overflow: hidden;
         position:relative;
         border-radius: $global_border_radius;
-
+        
         span {
             font-size: 33px;
         }
-        
-        // &::before{
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     border-radius: $global_border_radius;
-        //     border: 1px solid transparent;
-        //     background: $button_gradation;
-        //     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-        //     -webkit-mask-composite: destination-out;
-        //     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-        //     mask-composite: exclude;
-        // }
     }
     
     .switcher {

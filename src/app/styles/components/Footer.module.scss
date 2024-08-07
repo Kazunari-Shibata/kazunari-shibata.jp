@@ -4,15 +4,18 @@
     padding: 30px $inner_padding;
     margin-top: 50px;
     border-top: 1px solid $border_color_dark;
+    position: relative;
+    overflow: hidden;
 
     .wrapper {
         align-items: center;
-        // display: flex;
         font-weight: 400;
         justify-content: space-between;
         font-size: 11px;
         font-weight: 300;
         text-align: left;
+        z-index: 5;
+        position: relative;
 
         span {
             font-size: 11px;
@@ -54,9 +57,33 @@
         }
     }
     .foot {
+        position: relative;
+        z-index: 5;
         p {
             font-size: 11px;
             font-weight: 300;
+        }
+    }
+    .gradation {
+        aspect-ratio: 2 / 1;
+        background: linear-gradient(-45deg, red, blue);
+        border-radius: 50%;
+        filter: blur(35px);
+        position: relative;
+        width: 350px;
+        position: absolute;
+        right: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        // transform: translate(-50%,-50%);
+        z-index: 1;
+        opacity: .2;
+
+        &::after {
+            background: radial-gradient(rgba(37, 37, 37 , 0%), rgb(37, 37, 37));
+            content: '';
+            inset: 0;
+            position: absolute;
         }
     }
 }

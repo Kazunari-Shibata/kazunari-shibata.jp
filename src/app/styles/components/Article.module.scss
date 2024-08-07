@@ -4,22 +4,18 @@
     border-bottom: 1px solid $border_color_dark;
     margin: 75px auto 0;
     padding-bottom: 75px;
-
     &:first-child {
         margin: 40px auto 0;
     }
-
     &:last-child {
         border-bottom: 0;
     }
-
     .button{
         text-align: center;
         position: relative;
-        
         a {
             appearance: none;
-            background: $secondary_background_color;
+            background: $primary_color;
             border-radius: $global_border_radius;
             border: 0;
             color: $text_color_dark;
@@ -33,71 +29,73 @@
             position: relative;
             margin: 0 auto;
             z-index: 5;
-
-            &::before{
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border-radius: $global_border_radius;
-                border: 1px solid transparent;
-                background: $button_gradation;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-                -webkit-mask-composite: destination-out;
-                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
-                mask-composite: exclude;
+        }
+    }
+    .image {
+        border-radius: $global_border_radius;
+        margin-bottom: $gloval_margin_bottom;
+        overflow: hidden;
+        z-index: 5;
+        position: relative;
+    }
+    .texts {
+        font-weight: 300;
+        position: relative;
+        h3 {
+            font-size: 160%;
+            margin: 0 0 $gloval_margin_bottom;
+            font-weight: bold;
+            z-index: 5;
+            position: relative;
+            span {
+                font-size: 13px;
             }
         }
-
-        .gradation {
-            aspect-ratio: 1 / 1;
-            background: linear-gradient(45deg, rgba(0, 153, 247, 1), rgba(241, 23, 18, 1));
-            border-radius: 50%;
-            filter: blur(25px);
+        p {
+            margin-bottom: ($gloval_margin_bottom * 2);
+            font-size: 100%;
+            z-index: 5;
             position: relative;
-            width: 275px;
-            height: 100px;
+
+            span {
+                font-size: 11px;
+            }
+        }
+        .gradation {
+            aspect-ratio: 2 / 1;
+            background: linear-gradient(45deg, red, blue);
+            border-radius: 50%;
+            filter: blur(35px);
+            position: relative;
+            width: 300px;
             position: absolute;
-            left: 50%;
-            top: 50%;
+            left: 30%;
+            top: 20%;
             transform: translate(-50%,-50%);
-            opacity: .2;
+            z-index: 1;
+            opacity: .4;
 
             &::after {
-                background: radial-gradient(rgb(21 21 21 / 0%), rgb(21 21 21));
+                background: radial-gradient(rgba(37, 37, 37 , 0%), rgb(37, 37, 37));
                 content: '';
                 inset: 0;
                 position: absolute;
             }
         }
     }
-
-    .image {
-        border-radius: $global_border_radius;
-        margin-bottom: $gloval_margin_bottom;
-        overflow: hidden;
-    }
-
-    .texts {
-        font-weight: 300;
-
-        h3 {
-            font-size: 160%;
-            margin: 0 0 $gloval_margin_bottom;
-            font-weight: bold;
-            span {
-                font-size: 13px;
-            }
+    &:first-child {
+        .gradation {
+            background: linear-gradient(45deg, red, blue);
         }
-
-        p {
-            margin-bottom: ($gloval_margin_bottom * 2);
-            font-size: 100%;
-            span {
-                font-size: 11px;
-            }
+    }
+    &:nth-child(2) {
+        .gradation {
+            background: linear-gradient(45deg, blue, green);
+        }
+    }
+    &:nth-child(3) {
+        .gradation {
+            background: linear-gradient(45deg, yellow, red);
         }
     }
 }

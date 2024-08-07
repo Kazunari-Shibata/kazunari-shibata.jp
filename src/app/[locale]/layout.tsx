@@ -7,14 +7,8 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import "@/app/styles/Globals.scss";
 
-const roboto_c = Roboto_Condensed({
-    subsets: ["latin"],
-    variable: "--font-roboto_c",
-});
-const noto_jp = Noto_Sans_JP({
-    subsets: ["latin"],
-    variable: "--font-noto_jp",
-});
+const roboto_c = Roboto_Condensed({ subsets: ["latin"], variable: "--font-roboto_c" });
+const noto_jp = Noto_Sans_JP({ subsets: ["latin"], variable: "--font-noto_jp", });
 
 export const metadata: Metadata = {
     title: "Kazunari Shibata",
@@ -45,7 +39,7 @@ export default async function LocaleLayout({
                 <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             </head>
-            <body className={`${roboto_c.variable} ${noto_jp.variable}`}>
+            <body className={`${roboto_c.className} ${noto_jp.className}`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
