@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Install Packages
+npm install @next/third-parties@latest next@latest;
+npm install resend;
+npm install sass;
+npm install next-intl;
+
 ## Getting Started
 
 First, run the development server:

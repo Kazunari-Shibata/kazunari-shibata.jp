@@ -1,0 +1,45 @@
+@import "@/app/styles/Variables.scss";
+
+.container {
+    border-bottom: 1px solid $border_color_dark;
+    margin: 75px auto 0;
+    padding-bottom: 75px;
+
+    &:first-child {
+        margin: 40px auto 0;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    button {
+        margin: 0 auto 0;
+    }
+
+    .image {
+        border-radius: $global_border_radius;
+        margin-bottom: $gloval_margin_bottom;
+        overflow: hidden;
+    }
+
+    .texts {
+        font-weight: 300;
+
+        h3 {
+            font-size: 160%;
+            margin: 0 0 $gloval_margin_bottom;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: ($gloval_margin_bottom * 2);
+            font-size: 100%;
+        }
+    }
+}
+html[lang="ja"] .container {
+    h3 {
+        font-size: 150%;
+    }
+}

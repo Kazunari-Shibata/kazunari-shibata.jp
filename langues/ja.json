@@ -1,0 +1,31 @@
+{
+    "Works": {
+        "GASHAPON_OFFICIAL_SITE": {
+            "title": "ガシャポンオフィシャルサイト",
+            "description": "バンダイのカプセルトイ「ガシャポン」の公式情報サイトのリニューアルやPOSデータを活用した新機能の開発、ECサイトとの連携などプロデュース業務を担当。"
+        },
+        "GASHAPON_ONLINE": {
+            "title": "ガシャポンオンライン",
+            "description": "「ガシャポンオンライン」は、PC やスマホがあればいつでもどこでも24 時間オンラインでガシャポン商品を購入でき、後日その商品が指定先まで届くサービスです。画面上でガシャポン自販機を回すと、カプセルが出てきて開封でき、何が当たったかはその場でわかります。オンラインならではの抽選画面や音の演出が体験できるのも特徴のひとつです。"
+        }
+    },
+    "Button": {
+        "Read more": "もっと見る"
+    },
+    "Contact": {
+        "CONTACT ME" : "お問い合わせ",
+        "First Name": "姓",
+        "First Name_placeholder": "柴田",
+        "Last Name": "名",
+        "Last Name_placeholder": "和成",
+        "E-mail": "メールアドレス",
+        "Message": "メッセージ",
+        "Message_placeholder": "おひさ🍺",
+        "Submit": "送信",
+        "Submitting": "送信中...",
+        "lang": "ja"
+    },
+    "Send": {
+        "Hi": "〇〇様"
+    }
+}

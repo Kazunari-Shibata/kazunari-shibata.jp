@@ -1,0 +1,52 @@
+@import "@/app/styles/Variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $primary_background_color;
+    color: $text_color_dark;
+    font-family: var(--font-roboto_c), var(--font-noto_jp), sans-serif;
+    font-optical-sizing: auto;
+    font-size: $global_font_size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (min-width: $inner_width) {
+        background: $secondary_background_color;
+    }
+}
+
+html[lang="ja"] {
+    body {
+        font-size: 90%;
+        line-height: 1.7;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+main {
+    align-items: center;
+    background: $primary_background_color;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: $inner_width;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#inner {
+    overflow: hidden;
+    padding: 0 $inner_padding;
+}

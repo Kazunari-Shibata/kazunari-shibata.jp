@@ -1,0 +1,31 @@
+{
+    "Works": {
+        "GASHAPON_OFFICIAL_SITE": {
+            "title": "GASHAPON OFFICIAL SITE",
+            "description": "We developed a feature that allows you to easily find out which stores sell the Gashapon you want and how much stock is left from the map on our website."
+        },
+        "GASHAPON_ONLINE": {
+            "title": "GASHAPON ONLINE",
+            "description": "&quot;Gashapon Online&quot; is a service that allows you to purchase Gashapon products anytime, 24/7, from your PC or smartphone. You can turn the Gashapon machine and open the capsule to see what you get on the spot. You can also enjoy exclusive online lottery screens and sound effects."
+        }
+    },
+    "Button": {
+        "Read more": "Read more"
+    },
+    "Contact": {
+        "CONTACT ME": "CONTACT ME",
+        "First Name": "First Name",
+        "First Name_placeholder": "Kazunari",
+        "Last Name": "Last Name",
+        "Last Name_placeholder": "Shibata",
+        "E-mail": "E-mail",
+        "Message": "Message",
+        "Message_placeholder": "Let's grab a beer 🍺",
+        "Submit": "Submit",
+        "Submitting": "Submitting...",
+        "lang": "en"
+    },
+    "Send": {
+        "Hi": "Hi, 〇〇."
+    }
+}

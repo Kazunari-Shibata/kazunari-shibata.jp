@@ -1,0 +1,89 @@
+@import "@/app/styles/Variables.scss";
+
+.container {
+    background: $secondary_background_color;
+    border-radius: 10px;
+    border: 1px solid $border_color_dark;
+    margin: 50px auto;
+    max-width: 100%;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .wrapper {
+            width: 47%;
+        }
+    }
+
+    .title {
+        border-bottom: 1px solid $border_color_dark;
+        display: flex;
+        padding: 20px;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            overflow: hidden;
+            font-size: $global_font_size + 6px;
+        }
+
+        h2 {
+            font-size: 130%;
+            font-weight: bold;
+        }
+    }
+
+    form {
+        padding: 20px 20px 30px;
+    }
+
+    .wrapper {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 7px;
+        // font-size: 90%;
+    }
+
+    input,
+    textarea {
+        background: $primary_background_color;
+        border-radius: $global_border_radius;
+        border: 1px solid $border_color_dark;
+        color: $text_color_dark;
+        display: block;
+        font-family: var(--font-noto_sans_jp), sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-style: 100%;
+        font-weight: 400;
+        padding: 13px;
+        width: 100%;
+
+        &::placeholder {
+            font-family: var(--font-roboto_condensed), sans-serif;
+            font-size: 90%;
+            color: #777;
+        }
+    }
+
+    button {
+        background-color: #eee;
+        color: #151515;
+        padding: $button_padding;
+        border-radius: $global_border_radius;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid $border_color_dark;
+    }
+}
+html[lang="ja"] .container {
+    button {
+        font-size: 95%;
+    }
+}
