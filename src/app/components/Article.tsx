@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "@/app/styles/components/Article.module.scss";
-import { Button } from "@/app/components/Button";
+import { useTranslations } from 'next-intl';
 
 export function Article(data: any) {
+    const t = useTranslations('Article');
     return (
         <article className={ styles.container }>
             <div className={ styles.image }>
@@ -18,7 +20,11 @@ export function Article(data: any) {
                 <h3>{ data.title }</h3>
                 <p dangerouslySetInnerHTML={{ __html: data.description }} />
             </div>
-            <Button message="I'm tired" />
+            <div className={styles.button}>
+                <Link href={ data.url } target="_blank">
+                    <span>{t('See more')}</span>
+                </Link>
+            </div>
         </article>
     );
 }

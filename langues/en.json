@@ -9,8 +9,8 @@
             "description": "&quot;Gashapon Online&quot; is a service that allows you to purchase Gashapon products anytime, 24/7, from your PC or smartphone. You can turn the Gashapon machine and open the capsule to see what you get on the spot. You can also enjoy exclusive online lottery screens and sound effects."
         }
     },
-    "Button": {
-        "Read more": "Read more"
+    "Article": {
+        "See more": "See more"
     },
     "Contact": {
         "CONTACT ME": "CONTACT ME",
@@ -25,7 +25,7 @@
         "Submitting": "Submitting...",
         "lang": "en"
     },
-    "Send": {
-        "Hi": "Hi, 〇〇."
+    "Header": {
+        "to": "ja"
     }
 }
