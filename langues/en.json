@@ -1,4 +1,8 @@
 {
+    "Header": {
+        "lang": "en",
+        "Switching languages": "Switching languages"
+    },
     "Works": {
         "GASHAPON_OFFICIAL_SITE": {
             "title": "GASHAPON OFFICIAL SITE",
@@ -24,8 +28,5 @@
         "Submit": "Submit",
         "Submitting": "Submitting...",
         "lang": "en"
-    },
-    "Header": {
-        "to": "ja"
     }
 }

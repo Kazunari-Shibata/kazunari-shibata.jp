@@ -1,4 +1,8 @@
 {
+    "Header": {
+        "lang": "ja",
+        "Switching languages": "言語変更"
+    },
     "Works": {
         "GASHAPON_OFFICIAL_SITE": {
             "title": "ガシャポンオフィシャルサイト",
@@ -24,8 +28,5 @@
         "Submit": "送信",
         "Submitting": "送信中...",
         "lang": "ja"
-    },
-    "Header": {
-        "to": "en"
     }
 }
