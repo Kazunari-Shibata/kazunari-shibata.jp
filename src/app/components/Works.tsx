@@ -25,15 +25,15 @@ export function Works() {
                 image_height={900}
                 image_priority={false}
             />
-            {/* <Article 
-                title="GASHAPON OFFICIAL LINE"
-                // description={`Kazunari Shibata worked on producing Bandai&apos;s official Gashapon LINE account.<br /><br />If you add the official Gashapon LINE account (GASHAPON) as a friend, you can check your fortune for the day?! Now you can play Omikuji Gashapon. Not only will you receive information about Gashapon, but you can also find recommended Gashapon you can buy nearby. Why not become friends with us?`}
-                description={`If you add the official Gashapon LINE account (GASHAPON) as a friend, you can check your fortune for the day?! Now you can play Omikuji Gashapon. Not only will you receive information about Gashapon, but you can also find recommended Gashapon you can buy nearby. Why not become friends with us?`}
-                image_src="/images/gashapon_official_line.png"
+            <Article 
+                title={t('McDonalds_Tray_Mat.title')}
+                description={t('McDonalds_Tray_Mat.description')}
+                image_src="/images/mcdonalds.jpg"
+                url="https://prtimes.jp/main/html/rd/p/000000050.000011137.html"
                 image_width={900}
                 image_height={900}
                 image_priority={false}
-            /> */}
+            />
         </section>
     );
 }
