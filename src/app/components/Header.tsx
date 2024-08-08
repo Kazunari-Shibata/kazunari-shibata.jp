@@ -8,21 +8,18 @@ export function Header() {
     const t = useTranslations('Header');
     const lang = t("lang");
     const [isSwitcherVisible, setIsSwitcherVisible] = useState(false);
-    const [isBodyHidden, setIsBodyHidden] = useState(false);
 
     const toggleSwitcher = () => {
         setIsSwitcherVisible(!isSwitcherVisible);
-        setIsBodyHidden(!isBodyHidden);
     };
 
     const closeSwitcher = () => {
         setIsSwitcherVisible(false);
-        setIsBodyHidden(false);
     };
 
     useEffect(() => {
-        document.body.classList.toggle('overflow_hidden', isBodyHidden);
-    }, [isBodyHidden]);
+        document.body.classList.toggle('overflow_hidden', isSwitcherVisible);
+    }, [isSwitcherVisible]);
 
     return (
         <>
@@ -42,7 +39,7 @@ export function Header() {
             </header>
             <Switcher
                 lang={lang}
-                isSwitcherVisible={isSwitcherVisible}
+                is_visible={isSwitcherVisible}
                 closeSwitcher={closeSwitcher}
             />
         </>

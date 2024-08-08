@@ -71,11 +71,11 @@
             position: relative;
             width: 400px;
             position: absolute;
-            left: -20%;
-            top: -10%;
+            left: -25%;
+            top: -15%;
             // transform: translate(-50%,-50%);
             z-index: 1;
-            opacity: .5;
+            opacity: .4;
 
             &::after {
                 background: radial-gradient(rgba(37, 37, 37 , 0%), rgb(37, 37, 37));

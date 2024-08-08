@@ -1,6 +1,12 @@
 @import "@/app/styles/Variables.scss";
 
 .container {
+    display: none;
+    
+    &.is_visible {
+        display: block;
+    }
+
     .switcher {
         position: fixed;
         width: 100vw;
