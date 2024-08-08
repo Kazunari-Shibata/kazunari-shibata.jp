@@ -105,11 +105,11 @@ export function Contact() {
                     onClose={handleCloseMessage}
                 />
             )}
-            <Message
+            {/* <Message
                 status="success" // error
                 message="Message sent successfully." // Sorry, Unable to send the message.
                 onClose={handleCloseMessage}
-            />
+            /> */}
         </>
     );
 }
