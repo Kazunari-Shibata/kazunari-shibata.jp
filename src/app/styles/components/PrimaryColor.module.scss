@@ -1,7 +1,7 @@
 @import "@/app/styles/Variables.scss";
 
 .container {
-    font-size: $gloval_font_size - 2;
+    font-size: 80%;
     display: flex;
     align-items: center;
     padding: 50px 0;
@@ -20,7 +20,7 @@
             margin-right: 10px;
         }
         .ja {
-            font-size: $gloval_font_size - 4;
+            font-size: 90%;
             font-weight: 500;
         }
     }

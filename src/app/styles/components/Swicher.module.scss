@@ -5,7 +5,7 @@
         position: fixed;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, .4);
+        background: rgba(0, 0, 0, .5);
         left: 0;
         top: 0;
         font-size: $gloval_font_size;
@@ -32,7 +32,7 @@
         .head {
             display: flex;
             border-bottom: 1px solid $border_color_dark;
-            padding: 20px 30px;
+            padding: 15px 30px;
             padding-right: 20px;
             justify-content: space-between;
             align-items: center;
@@ -96,7 +96,7 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    left: 15px;
+                    left: 17px;
                     top: 50%;
                     width: 10px;
                     height: 10px;
