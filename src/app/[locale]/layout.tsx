@@ -9,7 +9,6 @@ import "@/app/styles/Globals.scss";
 
 const roboto_c = Roboto_Condensed({ subsets: ["latin"], variable: "--font-roboto_c" });
 const noto_jp = Noto_Sans_JP({ subsets: ["latin"], variable: "--font-noto_jp", });
-
 export const metadata: Metadata = {
     title: "Kazunari Shibata",
     description: "This site is the portfolio site of Kazunari Shibata.",
@@ -22,7 +21,13 @@ export const metadata: Metadata = {
     },
     manifest: '/images/favicon/site.webmanifest'
 }
-
+const getEnvironmentSpecificClasses = () => {
+    if (process.env.NODE_ENV === 'development') {
+        return `${roboto_c.className} ${noto_jp.className}`;
+    } else {
+        return `${roboto_c.variable} ${noto_jp.variable}`;
+    }
+};
 export default async function LocaleLayout({
     children,
     params: {locale}
@@ -33,14 +38,14 @@ export default async function LocaleLayout({
     // Providing all messages to the client
     // side is the easiest way to get started
     const messages = await getMessages();
-
+    const fontClasses = getEnvironmentSpecificClasses();
     return (
         <html lang={locale}>
             <head>
                 <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             </head>
-            <body className={`${roboto_c.className} ${noto_jp.className}`}>
+            <body className={fontClasses}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
