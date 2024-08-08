@@ -4,7 +4,7 @@
     font-size: 80%;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: $gloval_between 0;
 
     .block {
         display: block;
@@ -45,7 +45,7 @@
         transform: translate(12px, 45%);
 
         span {
-            margin-right: 10px;
+            margin-right: 7px;
         }
         .ja {
             font-size: 90%;
