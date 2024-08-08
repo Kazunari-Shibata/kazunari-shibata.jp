@@ -33,7 +33,7 @@
     }
     .image {
         border-radius: $global_border_radius;
-        margin-bottom: $gloval_margin_bottom;
+        // margin-bottom: $gloval_margin_bottom;
         overflow: hidden;
         z-index: 5;
         position: relative;
@@ -42,11 +42,13 @@
         font-weight: 300;
         position: relative;
         h3 {
-            font-size: 160%;
-            margin: 0 0 $gloval_margin_bottom;
+            font-size: 170%;
+            // margin: 0 0 $gloval_margin_bottom;
             font-weight: bold;
             z-index: 5;
             position: relative;
+            padding: $gloval_margin_bottom 0;
+
             span {
                 font-size: 13px;
             }
@@ -73,7 +75,7 @@
             top: 30%;
             transform: translate(-50%,-50%);
             z-index: 1;
-            opacity: .7;
+            opacity: .6;
 
             &::after {
                 background: radial-gradient(rgba(37, 37, 37 , 0%), rgb(37, 37, 37));
