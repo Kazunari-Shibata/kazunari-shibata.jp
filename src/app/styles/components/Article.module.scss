@@ -2,8 +2,8 @@
 
 .container {
     border-bottom: 1px solid $border_color_dark;
-    margin: 75px auto 0;
-    padding-bottom: 75px;
+    margin: $gloval_between auto 0;
+    padding-bottom: $gloval_between;
     &:first-child {
         margin: 0 auto 0;
     }

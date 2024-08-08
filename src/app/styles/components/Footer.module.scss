@@ -2,7 +2,7 @@
 
 .container {
     padding: 30px $inner_padding;
-    margin-top: 75px;
+    margin-top: $gloval_between;
     border-top: 1px solid $border_color_dark;
     position: relative;
     overflow: hidden;
