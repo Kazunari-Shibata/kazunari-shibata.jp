@@ -9,7 +9,7 @@
     justify-content: space-between;
     left: 50%;
     max-width: $inner_width;
-    padding: 15px $inner_padding;
+    padding: 13px $inner_padding;
     position: fixed;
     top: 0;
     transform: translateX(-50%);
@@ -18,7 +18,10 @@
 
     h1 {
         font-size: 23px;
-        width: 225px;
+        flex: 1;
+        img {
+            width: 225px;
+        }
     }
 
     .button {

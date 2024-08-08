@@ -38,7 +38,7 @@ main {
 
 #inner {
     overflow: hidden;
-    padding: 0 $inner_padding;
+    padding: 110px $inner_padding 0;
 }
 
 @media (min-width: $inner_width) {
