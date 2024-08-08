@@ -13,12 +13,12 @@ $animation_speed: 10s;
     display: flex;
     left: 50%;
     max-width: calc($inner_width - $inner_padding*2);
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     transform: translateX(-50%);
     vertical-align: middle;
-    width: 44px;
-    z-index: 5;
+    width: 66px;
+    z-index: 10;
 
     // // step 1
     // bottom: 30px;
@@ -56,6 +56,7 @@ $animation_speed: 10s;
         max-width: calc(100% - 75px);
         // background: #333;
         margin-left: 15px;
+
         p {
             -webkit-box-orient: vertical;
             line-clamp: 2;
@@ -93,12 +94,11 @@ $animation_speed: 10s;
 }
 .error {
     color: #f98080;
-    font-size: 90%;
 }
 @keyframes container_animation {
     5% {
         bottom: 35px;
-        width: 44px;
+        width: 66px;
     }
     10% {
         width: calc(100% - ($inner_padding * 2));

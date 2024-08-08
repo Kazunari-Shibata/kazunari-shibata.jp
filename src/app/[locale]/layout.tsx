@@ -17,10 +17,10 @@ export const metadata: Metadata = {
         apple: '/images/favicon/apple-touch-icon.png',
         icon: [
             { url: '/images/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-            { url: '/images/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/images/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' }
         ],
     },
-    manifest: '/images/favicon/site.webmanifest',
+    manifest: '/images/favicon/site.webmanifest'
 }
 
 export default async function LocaleLayout({
@@ -33,13 +33,20 @@ export default async function LocaleLayout({
     // Providing all messages to the client
     // side is the easiest way to get started
     const messages = await getMessages();
+    
+    // Check for environment variable
+    const isProduction = process.env.NODE_ENV === 'production';
+    const bodyClassName = isProduction
+        ? `${roboto_c.variacble} ${noto_jp.variacble}`
+        : `${roboto_c.className} ${noto_jp.className}`;
+
     return (
         <html lang={locale}>
             <head>
                 <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             </head>
-            <body className={`${roboto_c.variable} ${noto_jp.variable}`}>
+            <body className={bodyClassName}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
