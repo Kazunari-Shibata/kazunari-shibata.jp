@@ -64,16 +64,16 @@
             }
         }
         .gradation {
-            aspect-ratio: 2 / 1;
+            aspect-ratio: 1 / 1;
             background: linear-gradient(45deg, red, blue);
             border-radius: 50%;
             filter: blur(35px);
             position: relative;
-            width: 300px;
+            width: 400px;
             position: absolute;
-            left: 30%;
-            top: 30%;
-            transform: translate(-50%,-50%);
+            left: -20%;
+            top: -10%;
+            // transform: translate(-50%,-50%);
             z-index: 1;
             opacity: .5;
 

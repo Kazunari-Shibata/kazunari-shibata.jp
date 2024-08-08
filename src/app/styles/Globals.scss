@@ -13,10 +13,14 @@ body {
     color: $text_color_dark;
     font-family: var(--font-roboto_c), var(--font-noto_jp), sans-serif;
     font-optical-sizing: auto;
-    font-size: 17px;
+    font-size: $gloval_font_size;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
+
+    &.overflow_hidden {
+        overflow: hidden;
+    }
 }
 
 img {
@@ -38,7 +42,7 @@ main {
 
 #inner {
     overflow: hidden;
-    padding: 110px $inner_padding 0;
+    padding: 77px $inner_padding 0;
 }
 
 @media (min-width: $inner_width) {

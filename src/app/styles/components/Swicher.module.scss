@@ -1,0 +1,102 @@
+@import "@/app/styles/Variables.scss";
+
+.container {
+    .switcher {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, .3);
+        left: 0;
+        top: 0;
+        font-size: $gloval_font_size;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 15;
+        max-width: $inner_width;
+        overflow: hidden;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+
+        .wrapper {
+            min-width: 240px;
+            background: $secondary_background_color;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: $global_border_radius * 2;
+            border: 1px solid $border_color_dark;
+        }
+
+        .head {
+            display: flex;
+            border-bottom: 1px solid $border_color_dark;
+            padding: 10px 10px 10px 15px;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                font-size: 115%;    
+                font-weight: 500;
+            }
+
+            button {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $global_border_radius;
+                &:hover {
+                    background: $primary_background_color;
+                }
+            }
+        }
+
+        .body {
+            padding: 25px 15px;
+
+            a {
+                padding: 10px 40px;
+                margin-bottom: 10px;
+                border-radius: $global_border_radius;
+                background: $primary_background_color;
+                display: flex;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                span {
+                    font-size: 130%;
+                    margin-left: 5px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .active{
+                position: relative;
+                border: none;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background: #0070f3;
+                    border-radius: 25px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
