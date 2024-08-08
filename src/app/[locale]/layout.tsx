@@ -33,12 +33,6 @@ export default async function LocaleLayout({
     // Providing all messages to the client
     // side is the easiest way to get started
     const messages = await getMessages();
-    
-    // Check for environment variable
-    const isProduction = process.env.NODE_ENV === 'production';
-    const bodyClassName = isProduction
-        ? `${roboto_c.variacble} ${noto_jp.variacble}`
-        : `${roboto_c.className} ${noto_jp.className}`;
 
     return (
         <html lang={locale}>
@@ -46,7 +40,7 @@ export default async function LocaleLayout({
                 <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             </head>
-            <body className={bodyClassName}>
+            <body className={`${roboto_c.className} ${noto_jp.className}`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
