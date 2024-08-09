@@ -16,7 +16,7 @@
             background: var(--primary_color);
             border-radius: var(--border-radius);
             border: 0;
-            color: #fff;
+            color: var(--primary_text_color);
             cursor: pointer;
             display: inline-block;
             font-size: 105%;
@@ -38,6 +38,7 @@
     .texts {
         font-weight: 300;
         position: relative;
+
         h3 {
             font-size: 170%;
             font-weight: bold;
@@ -54,6 +55,7 @@
             font-size: 100%;
             z-index: 5;
             position: relative;
+            color: var(--secondary_text_color);
 
             span {
                 font-size: 11px;

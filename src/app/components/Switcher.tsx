@@ -26,6 +26,7 @@ export function Switcher({ lang, isSwitcherVisible, closeSwitcher }: SwicherProp
                                     alt="Close icon"
                                     width={28}
                                     height={28}
+                                    priority
                                 />
                             </button>
                         </div>

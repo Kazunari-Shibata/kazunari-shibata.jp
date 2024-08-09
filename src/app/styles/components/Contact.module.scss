@@ -1,12 +1,30 @@
 .container {
     // background: var(--secondary_background-color);
     border-radius: calc(var(--border-radius) * 2);
-    border: 1px solid var(--border-color);
+    border: 1px solid transparent;
     margin: var(--gloval_spacing) auto 0;
     max-width: 100%;
     position: relative;
-    box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.05), 5px 5px 15px 7px rgba(0, 0, 255, 0.05);
+    // box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.1), 5px 5px 15px 7px rgba(0, 0, 255, 0.1);
+    // box-shadow: 0 0 20px 10px rgba(255,255,255,.3);
     overflow: hidden;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: calc(var(--border-radius) * 2);
+        border: 1px solid transparent;
+        background-image: linear-gradient(645deg, rgba(247, 166, 12, 1) 10%, rgba(255, 34, 87, 1) 40%, rgba(154, 39, 238, 1) 68%, rgba(35, 102, 247, 1) 90%);
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+        -webkit-mask-composite: destination-out;
+        mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+        mask-composite: exclude;
+        opacity: .2;
+    }
 
     .inner {
         display: flex;
@@ -52,6 +70,7 @@
         display: block;
         margin-bottom: 7px;
         // font-size: 90%;
+        color: var(--secondary_text_color);
     }
 
     input,
@@ -78,7 +97,7 @@
 
     button {
         background-color: var(--primary_color);
-        color: #fff;
+        color: var(--primary_text_color);
         padding: var(--button_padding);
         border-radius: var(--border-radius);
         font-size: 17px;

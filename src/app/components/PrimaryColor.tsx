@@ -7,7 +7,7 @@ export function PrimaryColor() {
     return (
         <div className={styles.container}>
             <span className={styles.circle}></span>
-            <p>#745399<span></span><span>:</span><span>Edomurasaki</span><span className={styles.ja}>江戸紫</span><span className={styles.ja}>えどむらさき</span></p>
+            <p>#745399<span></span><span>:</span><span>Edo purple</span><span>:</span><span className={styles.ja}>江戸紫</span><span className={styles.ja}>えどむらさき</span></p>
             {/* R:116 G:83 B:153 C:66% M:75% Y:13% K:0% */}
         </div>
     );
