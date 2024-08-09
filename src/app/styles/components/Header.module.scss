@@ -1,7 +1,8 @@
 .container {
     align-items: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    --blur: blur(10px);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
     border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;

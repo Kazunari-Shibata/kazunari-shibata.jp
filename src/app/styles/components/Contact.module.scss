@@ -18,12 +18,12 @@
         bottom: 0;
         border-radius: calc(var(--border-radius) * 2);
         border: 1px solid transparent;
-        background-image: linear-gradient(645deg, rgba(247, 166, 12, 1) 10%, rgba(255, 34, 87, 1) 40%, rgba(154, 39, 238, 1) 68%, rgba(35, 102, 247, 1) 90%);
+        background-image: linear-gradient(845deg, rgba(247, 166, 12, 1) 10%, rgba(255, 34, 87, 1) 40%, rgba(154, 39, 238, 1) 68%, rgba(35, 102, 247, 1) 90%);
         -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
         -webkit-mask-composite: destination-out;
         mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
         mask-composite: exclude;
-        opacity: .2;
+        opacity: var(--gradation_opacity);
     }
 
     .inner {
