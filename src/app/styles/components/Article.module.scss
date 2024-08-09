@@ -1,9 +1,7 @@
-@import "@/app/styles/Variables.scss";
-
 .container {
-    border-bottom: 1px solid $border_color_dark;
-    margin: $gloval_between auto 0;
-    padding-bottom: $gloval_between;
+    border-bottom: 1px solid var(--border-color);
+    margin: var(--gloval_spacing) auto 0;
+    padding-bottom: var(--gloval_spacing);
     &:first-child {
         margin: 0 auto 0;
     }
@@ -15,8 +13,8 @@
         position: relative;
         a {
             appearance: none;
-            background: $primary_color;
-            border-radius: $global_border_radius;
+            background: var(--primary_color);
+            border-radius: var(--border-radius);
             border: 0;
             color: #fff;
             cursor: pointer;
@@ -25,15 +23,14 @@
             font-weight: 500;
             outline: none;
             overflow: hidden;
-            padding: $button_padding;
+            padding: var(--button_padding);
             position: relative;
             margin: 0 auto;
             z-index: 5;
         }
     }
     .image {
-        border-radius: $global_border_radius;
-        // margin-bottom: $gloval_margin_bottom;
+        border-radius: var(--border-radius);
         overflow: hidden;
         z-index: 5;
         position: relative;
@@ -43,18 +40,17 @@
         position: relative;
         h3 {
             font-size: 170%;
-            // margin: 0 0 $gloval_margin_bottom;
             font-weight: bold;
             z-index: 5;
             position: relative;
-            padding: $gloval_margin_bottom 0;
+            padding: var(--gloval_margin-bottom) 0;
 
             span {
                 font-size: 13px;
             }
         }
         p {
-            margin-bottom: ($gloval_margin_bottom * 2);
+            margin-bottom: calc(var(--gloval_margin-bottom) * 2);
             font-size: 100%;
             z-index: 5;
             position: relative;

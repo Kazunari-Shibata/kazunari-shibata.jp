@@ -20,7 +20,7 @@ export function Footer() {
                     <li className={styles.eight}>
                         <Link href="https://8card.net/virtual_cards/9YZs4e0u2wfrsymVCHRTsQ" target="_blank">
                             <Image
-                                src="/images/eight_profile_code.png"
+                                src="/images/Footer_links_eight.webp"
                                 alt="Eight profile code"
                                 width={100}
                                 height={100}
@@ -30,7 +30,7 @@ export function Footer() {
                     <li>
                         <Link href="https://www.instagram.com/kazunari_shibata_/" target="_blank">
                             <Image
-                                src="/images/ig_logo.png"
+                                src="/images/Footer_links_ig.webp"
                                 alt="Instagram logo"
                                 width={50}
                                 height={50}
@@ -40,7 +40,7 @@ export function Footer() {
                     <li>
                         <Link href="https://github.com/Kazunari-Shibata" target="_blank">
                             <Image
-                                src="/images/github-logo.svg"
+                                src="/images/Footer_links_github.svg"
                                 alt="GitHub logo"
                                 width={50}
                                 height={50}
@@ -50,7 +50,7 @@ export function Footer() {
                     <li className={styles.linkedin}>
                         <Link href="https://www.linkedin.com/in/kazunari-shibata-0890172bb/" target="_blank">
                             <Image
-                                src="/images/linkedin_logo.webp"
+                                src="/images/Footer_links_in.webp"
                                 alt="Linkedin logo"
                                 width={50}
                                 height={50}

@@ -1,48 +1,35 @@
-@import "@/app/styles/Variables.scss";
-
 .container {
     font-size: 80%;
     display: flex;
     align-items: center;
-    padding: $gloval_between 0;
+    padding: var(--gloval_spacing) 0;
 
-    .block {
+    .circle {
         display: block;
-        width: 20px;
-        height: 20px;
-        background: $primary_color;
+        width: 35px;
+        height: 35px;
+        background: var(--primary_color);
         margin-right: 5px;
         position: relative;
-        transform: translateY(-50%);
-
-        &::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 12px;
-            background: #fff;
-            position: absolute;
-            top: 12px;
-            left: 10px;
-            transform: rotate(333deg) translateY(50%);
-        }
+        border-radius: 50px;
 
         &::before {
             content: "";
             display: block;
-            width: 15px;
+            width: 30px;
             height: 1px;
             background: #fff;
             position: absolute;
-            top: 28px;
-            left: 16px;
-            // transform: translateY(50%);
+            top: 50%;
+            left: 50%;
+            // transform: rotate(333deg) translateY(50%);
         }
     }
 
     p {
         font-weight: 400;
-        transform: translate(12px, 45%);
+        // transform: translate(12px, 45%);
+        margin-left: 15px;
 
         span {
             margin-right: 7px;

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
 import styles from "@/app/styles/components/Contact.module.scss";
 import { Message } from '@/app/components/Message';
 import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import Image from "next/image";
 
 export function Contact() {
     const t = useTranslations('Contact');
@@ -52,7 +53,14 @@ export function Contact() {
         <>
             <section className={styles.container}>
                 <div className={styles.title}>
-                    <span className="material-symbols-outlined">alternate_email</span>
+                    {/* <span className="material-symbols-outlined">alternate_email</span> */}
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg> */}
+                    <Image
+                        src="/images/Contact_icon.svg"
+                        alt="Icon of Contact form"
+                        width={24}
+                        height={24}
+                    />
                     <h2>{t('CONTACT ME')}</h2>
                 </div>
                 <form onSubmit={handleSubmit}>

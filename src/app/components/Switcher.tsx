@@ -1,6 +1,7 @@
 import styles from "@/app/styles/components/Swicher.module.scss";
-import Link from "next/link";
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
+import Image from "next/image";
 
 interface SwicherProps {
     lang: string;
@@ -19,7 +20,13 @@ export function Switcher({ lang, isSwitcherVisible, closeSwitcher }: SwicherProp
                         <div className={styles.head}>
                             <h4>{t("Switching languages")}</h4>
                             <button onClick={closeSwitcher}>
-                                <span className="material-symbols-outlined">close</span>
+                                {/* <span className="material-symbols-outlined">close</span> */}
+                                <Image
+                                    src="/images/Switcher_icon.svg"
+                                    alt="Close icon"
+                                    width={28}
+                                    height={28}
+                                />
                             </button>
                         </div>
                         <div className={styles.body}>

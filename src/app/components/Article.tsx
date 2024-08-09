@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import styles from "@/app/styles/components/Article.module.scss";
 import { useTranslations } from 'next-intl';
 import DOMPurify from 'isomorphic-dompurify';
+import Image from "next/image";
+import Link from "next/link";
 
 export function Article(data: any) {
     const t = useTranslations('Article');

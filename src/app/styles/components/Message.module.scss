@@ -1,18 +1,17 @@
-@import "@/app/styles/Variables.scss";
 $animation_speed: 10s;
 
 .container {
     align-items: center;
     animation: container_animation $animation_speed forwards;
-    background: $secondary_background_color;
+    background: var(--secondary_background-color);
     border-radius: 50px;
-    border: 1px solid $border_color_dark;
+    border: 1px solid var(--border-color);
     bottom: -100px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
     box-sizing: border-box;
     display: flex;
     left: 50%;
-    max-width: calc($inner_width - $inner_padding*2);
+    max-width: calc(var(--inner_width) - (var(--inner_padding) * 2));
     padding: 20px;
     position: fixed;
     transform: translateX(-50%);
@@ -77,16 +76,16 @@ $animation_speed: 10s;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: $global_border_radius;
+        border-radius: var(--border-radius);
         overflow: hidden;
         position: absolute;
         right: 15px;
         opacity: 0;
         &:hover {
-            background: $primary_background_color;
+            background: var(--primary_background-color);
         }
         svg {
-            color: $text_color_dark;
+            color: var(--color);
         }
     }
 }
@@ -102,14 +101,14 @@ $animation_speed: 10s;
         width: 66px;
     }
     10% {
-        width: calc(100% - ($inner_padding * 2));
+        width: calc(100% - (var(--inner_padding) * 2));
     }
     95% {
         bottom: 35px;
     }
     100% {
         bottom: -100px;
-        width: calc(100% - ($inner_padding * 2));
+        width: calc(100% - (var(--inner_padding) * 2));
     }
 }
 @keyframes icon_animation {

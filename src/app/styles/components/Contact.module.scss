@@ -1,11 +1,12 @@
-@import "@/app/styles/Variables.scss";
-
 .container {
-    background: $secondary_background_color;
-    border-radius: $global_border_radius * 2;
-    border: 1px solid $border_color_dark;
-    margin: $gloval_between auto 0;
+    // background: var(--secondary_background-color);
+    border-radius: calc(var(--border-radius) * 2);
+    border: 1px solid var(--border-color);
+    margin: var(--gloval_spacing) auto 0;
     max-width: 100%;
+    position: relative;
+    box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.05), 5px 5px 15px 7px rgba(0, 0, 255, 0.05);
+    overflow: hidden;
 
     .inner {
         display: flex;
@@ -17,15 +18,16 @@
     }
 
     .title {
-        border-bottom: 1px solid $border_color_dark;
+        border-bottom: 1px solid var(--border-color);
         display: flex;
-        padding: 20px 20px;
+        padding: 25px 20px;
+        align-items: center;
 
-        span {
+        img {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 5px;
+            margin-right: 10px;
             overflow: hidden;
             font-size: 120%;
         }
@@ -33,11 +35,13 @@
         h2 {
             font-size: 130%;
             font-weight: bold;
+            line-height: 1;
         }
     }
 
     form {
         padding: 20px 20px;
+        background: var(--secondary_background-color);
     }
 
     .wrapper {
@@ -53,10 +57,10 @@
     input,
     textarea {
         // background: $primary_background_color;
-        background: #111;
-        border-radius: $global_border_radius;
-        border: 1px solid $border_color_dark;
-        color: $text_color_dark;
+        background: var(--tertiary_background-color);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        color: var(--color);
         display: block;
         font-family: var(--font-noto_sans_jp), sans-serif;
         font-optical-sizing: auto;
@@ -73,10 +77,10 @@
     }
 
     button {
-        background-color: $primary_color;
+        background-color: var(--primary_color);
         color: #fff;
-        padding: $button_padding;
-        border-radius: $global_border_radius;
+        padding: var(--button_padding);
+        border-radius: var(--border-radius);
         font-size: 17px;
         font-weight: 500;
         display: block;
@@ -85,6 +89,9 @@
     }
 }
 html[lang="ja"] .container {
+    h2 {
+        transform: translateY(1px);
+    }
     button {
         font-size: 95%;
     }

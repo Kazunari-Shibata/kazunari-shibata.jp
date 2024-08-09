@@ -1,19 +1,38 @@
 @import "@/app/styles/Variables.scss";
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind components;
+// @tailwind utilities;
 
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --border-color: #252525;
+    --color: #EDEDED;
+    // --primary_background-color: #000;
+    // --secondary_background-color: #282828;
+    // --tertiary_background-color: #282828;
+    --primary_background-color: #000;
+    --secondary_background-color: #0a0a0a;
+    --tertiary_background-color: #191919;
+    --primary_color: #745399;
+    --font-size: 17px;
+    --inner_width: 450px;
+    --inner_padding: 20px;
+    --gloval_spacing: 75px;
+    --gloval_margin-bottom: 15px;
+    --border-radius: 5px;
+    --button_padding: 10px 20px;
+}
+
 body {
-    background: $primary_background_color;
-    color: $text_color_dark;
+    background: var(--primary_background-color);
+    color: var(--color);
     font-family: var(--font-roboto_c), var(--font-noto_jp), sans-serif;
     font-optical-sizing: auto;
-    font-size: $gloval_font_size;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -30,10 +49,10 @@ img {
 
 main {
     align-items: center;
-    background: $primary_background_color;
+    background: var(--primary_background-color);
     justify-content: center;
     margin: 0 auto;
-    max-width: $inner_width;
+    max-width: var(--inner_width);
     min-height: 100vh;
     position: relative;
     width: 100%;
@@ -42,12 +61,12 @@ main {
 
 #inner {
     overflow: hidden;
-    padding: 77px $inner_padding 0;
+    padding: 77px var(--inner_padding) 0;
 }
 
 @media (min-width: $inner_width) {
     body {
-        background: $secondary_background_color;
+        background: #282828;
     }
 }
 

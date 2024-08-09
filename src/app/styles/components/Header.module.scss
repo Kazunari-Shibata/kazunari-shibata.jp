@@ -1,15 +1,13 @@
-@import "@/app/styles/Variables.scss";
-
 .container {
     align-items: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid $border_color_dark;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     left: 50%;
-    max-width: $inner_width;
-    padding: 13px $inner_padding;
+    max-width: var(--inner_width);
+    padding: 13px var(--inner_padding);
     position: fixed;
     top: 0;
     transform: translateX(-50%);
@@ -38,7 +36,7 @@
         outline: none;
         overflow: hidden;
         position:relative;
-        border-radius: $global_border_radius;
+        border-radius: var(--border-radius);
         
         span {
             font-size: 33px;

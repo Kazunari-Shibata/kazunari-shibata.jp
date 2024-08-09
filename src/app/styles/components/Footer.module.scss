@@ -1,9 +1,7 @@
-@import "@/app/styles/Variables.scss";
-
 .container {
-    padding: 30px $inner_padding;
+    padding: 30px var(--inner_padding);
     // margin-top: $gloval_between;
-    border-top: 1px solid $border_color_dark;
+    border-top: 1px solid var(--border-color);
     position: relative;
 
     .wrapper {
@@ -34,12 +32,12 @@
                 width: 50px;
                 height: 50px;
                 padding: 10px;
-                border-radius: $global_border_radius;
+                border-radius: var(--border-radius);
                 overflow: hidden;
                 margin-right: 10px;
 
                 &:hover {
-                    background: $secondary_background_color;
+                    background: var(--tertiary_background-color);
                 }
             }
             .linkedin img {
