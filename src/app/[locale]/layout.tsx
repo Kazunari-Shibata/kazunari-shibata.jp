@@ -23,14 +23,13 @@ export default async function LocaleLayout({
     return (
         <html lang={locale}>
             <head>
-                <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <title>Kazunari Shibata</title>
                 <meta name="description" content="This site is the portfolio site of Kazunari Shibata." />
+                <GoogleTagManager gtmId="GTM-K6554JPR" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
                 <link rel="manifest" href="/images/favicon/site.webmanifest"></link>
-                {/* description: "This site is the portfolio site of Kazunari Shibata.",</title> */}
                 {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> */}
             </head>
             <body className={process.env.NODE_ENV === 'development' ? `${roboto_c.className} ${noto_jp.className}` : `${roboto_c.variable} ${noto_jp.variable}`}>
